@@ -167,7 +167,7 @@ function AuthenticationWall(props: {
               onClick={() =>
                 firebase
                   .auth()
-                  .signInWithPopup(new firebase.auth.FacebookAuthProvider())
+                  .signInWithRedirect(new firebase.auth.FacebookAuthProvider())
               }
             />
           </Paragraph>
